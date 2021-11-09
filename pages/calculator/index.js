@@ -912,7 +912,7 @@ class Calculator extends Component {
 
         <br />
 
-        <Box sx={{ width: "50%" }}>
+        <Box >
           <TableContainer component={Paper}>
             <Table aria-label="simple table">
               <TableBody>
@@ -980,7 +980,7 @@ class Calculator extends Component {
                 <b> {PrintNice(this.state.add_month)}</b>
               </li>
               <li>
-                Make 10% annual increasing, monthly contributions of:{" "}
+                Make 10% annual increasing, monthly contributions of: {" "}
                 <b>{PrintNice(this.state.add_month_inc)}</b>
               </li>
             </ol>
@@ -1023,7 +1023,7 @@ class Calculator extends Component {
                 <b> {PrintNice(this.state.add_month)}</b>
               </li>
               <li>
-                Make 10% annual increasing, monthly contributions of:{" "}
+                Make 10% annual increasing, monthly contributions of: {" "}
                 <b>{PrintNice(this.state.add_month_inc)}</b>
               </li>
             </ol>{" "}
@@ -1034,14 +1034,14 @@ class Calculator extends Component {
 
         <Box>{this.doGraph()}</Box>
 
-        <Box sx={{ width: "80%" }}>
+        <Box >
           <TableContainer component={Paper}>
             <Table aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell>Property</TableCell>
-                  <TableCell align="right">Increase</TableCell>
-                  <TableCell align="right">Decrease</TableCell>
+                  <TableCell align="right">Inc</TableCell>
+                  <TableCell align="right">Dec</TableCell>
                   <TableCell align="right" sx={{ width: "30%" }}>
                     New value
                   </TableCell>
@@ -1361,7 +1361,7 @@ class Calculator extends Component {
     return (
       <box>
         <Chart
-          width={"500px"}
+          width={"100%"}
           height={"300px"}
           chartType="BarChart"
           loader={<div>Loading Chart</div>}
@@ -1388,9 +1388,9 @@ class Calculator extends Component {
           ]}
           options={{
             title: "Retirement forecast",
-            width: "90%",
+            width: "65%",
             height: 300,
-            bar: { groupWidth: "95%" },
+            bar: { groupWidth: "65%" },
             legend: { position: "none" },
           }}
           // For tests

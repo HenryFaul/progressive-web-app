@@ -59,8 +59,8 @@ export default function Home() {
               spacing={2}
               justifyContent="center"
             >
-              <Button onClick={()=>{ router.push("/calculator");}} variant="contained">New calculation</Button>
-              <Button variant="outlined">Previous calculation</Button>
+              <Button onClick={()=>{ router.push("/calculator");}} variant="contained">New Plan</Button>
+              <Button variant="outlined">Saved Plan</Button>
             </Stack>
           </Container>
         </Box>
