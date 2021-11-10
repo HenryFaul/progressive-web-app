@@ -30,6 +30,9 @@ function MyApp({ Component, pageProps }) {
           />
           <meta name="description" content="Description" />
           <meta name="keywords" content="Keywords" />
+
+          <meta name='mobile-web-app-capable' content='yes' />
+
           <title>HonestApp</title>
 
           <link rel="manifest" href="/manifest.json" />
@@ -45,7 +48,7 @@ function MyApp({ Component, pageProps }) {
             type="image/png"
             sizes="32x32"
           />
-          <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+          <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
           <meta name="theme-color" content="#317EFB" />
 
           <link
