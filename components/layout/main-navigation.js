@@ -7,6 +7,9 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useRouter } from 'next/router'
+import InstallPWA from "../InstallPWA";
+import Container from "@mui/material/Container";
+import React from "react";
 
 function MainNavigation() {
   const router = useRouter();
@@ -27,6 +30,7 @@ function MainNavigation() {
             <Typography variant="h6" onClick={()=>{ router.push("/");}} component="div" sx={{ flexGrow: 1 }}>
              HonestApp
             </Typography>
+              <InstallPWA/>
               <Button color="inherit">Sign out</Button>
             <Button color="inherit">Sign in</Button>
           </Toolbar>

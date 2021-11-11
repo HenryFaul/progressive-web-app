@@ -1,5 +1,5 @@
 
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -7,7 +7,6 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import { useRouter } from 'next/router'
-
 
 export default function Home() {
 
@@ -62,6 +61,8 @@ export default function Home() {
               <Button onClick={()=>{ router.push("/calculator");}} variant="contained">New Plan</Button>
               <Button variant="outlined">Saved Plan</Button>
             </Stack>
+
+
           </Container>
         </Box>
 

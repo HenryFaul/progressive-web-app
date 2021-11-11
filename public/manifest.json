@@ -1,6 +1,7 @@
 {
   "name": "Honest Financial App",
   "short_name": "HonestApp",
+  "description": "A simple yet Honest picture of your Retirement.",
   "theme_color": "#ffffff",
   "background_color": "#004740",
   "display": "fullscreen",
